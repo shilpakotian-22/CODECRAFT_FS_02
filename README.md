@@ -36,38 +36,24 @@ Database: MongoDB
 ### Project Structure
 
 CODECRAFT_FS_02/
+├── backend/
+│   ├── config/ (db.js)
+│   ├── middleware/ (auth.js)
+│   ├── models/ (User.js, Employee.js)
+│   ├── routes/ (auth.js, employees.js)
+│   ├── server.js
+│   ├── .env
+│   ├── package.json
+│   └── package-lock.json
 │
-├── backend/               
-│   ├── config/             
-│   │   └── db.js
-│   │
-│   ├── middleware/         
-│   │   └── auth.js
-│   │
-│   ├── models/              
-│   │   ├── Employee.js
-│   │   └── User.js
-│   │
-│   ├── routes/             
-│   │   ├── auth.js        
-│   │   └── employees.js    
-│   │
-│   ├── node_modules/       
-│   ├── .env                 
-│   ├── package.json        
-│   ├── package-lock.json
-│   └── server.js            
-│
-├── frontend/               
-│   ├── css/                
-│   ├── js/                 
-│   ├── index.html         
-│   ├── register.html       
-│   ├── employees.html      
-│   └── employee-form.html  
-│
-└── README.md               
-
+├── frontend/
+│   ├── css/ (style.css)
+│   ├── js/ (auth.js, employees.js)
+│   ├── index.html
+│   ├── register.html
+│   ├── employees.html
+│   └── employee-form.html
+               
 
 ## 🛠 Setup Instructions
 ### Backend
