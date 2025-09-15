@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Employees - EMS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div>
+        <h1>Employees</h1>
+        <div class="small-muted">Manage employee records</div>
+      </div>
+      <div>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </div>
+
+    <div>
+      <button id="openCreate">Add Employee</button>
+    </div>
+
+    <div id="alerts"></div>
+
+    <table class="table" id="employeesTable">
+      <thead>
+        <tr><th>Name</th><th>Email</th><th>Phone</th><th>Position</th><th>Department</th><th>Salary</th><th>Actions</th></tr>
+      </thead>
+      <tbody id="employeesTbody">
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal-ish simple form -->
+  <div id="formModal" style="display:none; position:fixed; inset:0; background:rgba(2,6,23,0.7); align-items:center; justify-content:center;">
+    <div style="background:#0b1220; padding:18px; border-radius:10px; width:90%; max-width:520px;">
+      <h2 id="formTitle">Add Employee</h2>
+      <form id="employeeForm">
+        <input type="hidden" id="empId" />
+        <input placeholder="First name" id="firstName" required />
+        <input placeholder="Last name" id="lastName" required />
+        <input placeholder="Email" id="empEmail" type="email" required />
+        <input placeholder="Phone" id="phone" />
+        <input placeholder="Position" id="position" />
+        <input placeholder="Department" id="department" />
+        <input placeholder="Salary" id="salary" type="number" min="0" />
+        <div style="display:flex;justify-content:flex-end; gap:8px; margin-top:10px;">
+          <button type="button" id="closeModal" class="btn-danger">Cancel</button>
+          <button type="submit">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/employees.js"></script>
+</body>
+</html>

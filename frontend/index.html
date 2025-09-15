@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Login - Employee Management</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <h1>Employee Management</h1>
+      <div class="small-muted">Task - 02</div>
+    </div>
+
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <p class="small-muted">Don't have an account? <a href="register.html" class="link">Register</a></p>
+
+    <div id="msg"></div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
